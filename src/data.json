@@ -1,0 +1,253 @@
+{
+    "restaurants": [
+      {
+        "name": ".CN Chinese",
+        "rating": 5,
+        "address": "228 City Road, Cardiff",
+        "postal_code": "CF24 3JH",
+        "cuisine": "Chinese",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Tokyo Sushi",
+        "rating": 4.5,
+        "address": "45 High Street, Cardiff",
+        "postal_code": "CF10 1BH",
+        "cuisine": "Japanese",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Bella Italia",
+        "rating": 4,
+        "address": "22 Park Place, Cardiff",
+        "postal_code": "CF10 3BA",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Café Rouge",
+        "rating": 4,
+        "address": "12 Queen Street, Cardiff",
+        "postal_code": "CF10 2WB",
+        "cuisine": "French",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Grill House",
+        "rating": 3.5,
+        "address": "5 Mill Lane, Cardiff",
+        "postal_code": "CF10 1FL",
+        "cuisine": "Grill",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Spice Hub",
+        "rating": 4.2,
+        "address": "102 Newport Road, Cardiff",
+        "postal_code": "CF24 1DG",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "The Greek Spot",
+        "rating": 4.7,
+        "address": "8 Morgan Arcade, Cardiff",
+        "postal_code": "CF10 1AF",
+        "cuisine": "Greek",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "La Parisienne",
+        "rating": 5,
+        "address": "18 Cathedral Road, Cardiff",
+        "postal_code": "CF11 9LJ",
+        "cuisine": "French",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Burger Joint",
+        "rating": 4.1,
+        "address": "75 Cowbridge Road, Cardiff",
+        "postal_code": "CF5 1BJ",
+        "cuisine": "American",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Zen Garden",
+        "rating": 4.8,
+        "address": "3 North Road, Cardiff",
+        "postal_code": "CF10 3DY",
+        "cuisine": "Thai",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Pasta Fresca",
+        "rating": 4.5,
+        "address": "15 The Hayes, Cardiff",
+        "postal_code": "CF10 1AH",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Curry Leaf",
+        "rating": 4.0,
+        "address": "123 Clifton Street, Cardiff",
+        "postal_code": "CF24 1LP",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Sushi House",
+        "rating": 4.6,
+        "address": "67 St Mary Street, Cardiff",
+        "postal_code": "CF10 1FA",
+        "cuisine": "Japanese",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Mediterranean Delight",
+        "rating": 4.3,
+        "address": "22 Greyfriars Road, Cardiff",
+        "postal_code": "CF10 3AD",
+        "cuisine": "Mediterranean",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Café Italiano",
+        "rating": 4.7,
+        "address": "11 Queen Street, Cardiff",
+        "postal_code": "CF10 2AG",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Tandoori Nights",
+        "rating": 4.0,
+        "address": "30 Kingsway, Cardiff",
+        "postal_code": "CF10 3PD",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Crispy Duck",
+        "rating": 4.5,
+        "address": "18 Church Street, Cardiff",
+        "postal_code": "CF10 1BG",
+        "cuisine": "Chinese",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Pita Pit",
+        "rating": 4.2,
+        "address": "54 St John Street, Cardiff",
+        "postal_code": "CF10 1FX",
+        "cuisine": "Mediterranean",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Soul Kitchen",
+        "rating": 4.0,
+        "address": "4 Charles Street, Cardiff",
+        "postal_code": "CF10 2GA",
+        "cuisine": "American",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Taste of Italy",
+        "rating": 4.8,
+        "address": "17 Cowbridge Road, Cardiff",
+        "postal_code": "CF5 5DF",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Mamma Mia",
+        "rating": 4.5,
+        "address": "78 North Road, Cardiff",
+        "postal_code": "CF10 3AD",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Thai Garden",
+        "rating": 4.6,
+        "address": "25 Park Lane, Cardiff",
+        "postal_code": "CF10 3AT",
+        "cuisine": "Thai",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Pasta & Co.",
+        "rating": 4.0,
+        "address": "3 Wellfield Road, Cardiff",
+        "postal_code": "CF24 3PF",
+        "cuisine": "Italian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Indulge",
+        "rating": 4.2,
+        "address": "61 Cardiff Road, Cardiff",
+        "postal_code": "CF15 7QW",
+        "cuisine": "American",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Spice of Life",
+        "rating": 4.7,
+        "address": "90 Albany Road, Cardiff",
+        "postal_code": "CF24 3LY",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Fresh Greens",
+        "rating": 4.4,
+        "address": "12 Central Square, Cardiff",
+        "postal_code": "CF10 1FE",
+        "cuisine": "Vegetarian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Burger Mania",
+        "rating": 4.1,
+        "address": "14 Kings Road, Cardiff",
+        "postal_code": "CF11 9AA",
+        "cuisine": "American",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Saffron Lounge",
+        "rating": 4.3,
+        "address": "40 Crwys Road, Cardiff",
+        "postal_code": "CF24 4NQ",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Bistro Pierre",
+        "rating": 4.6,
+        "address": "1-3 Victoria Park, Cardiff",
+        "postal_code": "CF5 1NY",
+        "cuisine": "French",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Dine Divine",
+        "rating": 5,
+        "address": "123 The Parade, Cardiff",
+        "postal_code": "CF24 3AB",
+        "cuisine": "Fusion",
+        "menu_link": "https://menu-link.com"
+      },
+      {
+        "name": "Kebab House",
+        "rating": 4.1,
+        "address": "60 Mill Lane, Cardiff",
+        "postal_code": "CF10 1FL",
+        "cuisine": "Indian",
+        "menu_link": "https://menu-link.com"
+        }]
+    }
+       
+  

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import Review from './Review';
+import {Link} from 'react-router-dom';
+import ReviewList from './Review'
+import Geekfood from './Geekfood';
 
 const HeroSection = () => {
   return (
@@ -38,6 +39,9 @@ const HeroSection = () => {
           </div>
         </div> 
       </section>
+
+      <Geekfood/>
+      <ReviewList />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Quote from './components/Quote';
 import Restaurent from './components/Restaurent';
 import Geekfood from './components/Geekfood';
-import Review from './components/Review';
+import Food from './components/Food';  // Add this import statement
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -18,10 +18,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/restaurent" element={<Restaurent />} />
         <Route path="/quote" element={<Quote />} />
+        <Route path="/restaurent" element={<Restaurent />} />
         <Route path="/geekfood" element={<Geekfood />} />
-        <Route path="/review" element={<Review />} />
+        <Route path="/Food" element={<Food/>}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

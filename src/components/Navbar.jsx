@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-around items-center">
         <Link to="/" className="flex items-center">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src="public/restaurant_562678.png"
             className="h-8 mr-3"
             alt="Flowbite Logo"
           />

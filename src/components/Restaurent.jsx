@@ -1,49 +1,95 @@
-import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import data from '../data.json'; // Import the JSON data
 
-// Sample detail component
-const RestaurantDetail = () => {
-  return <div>This is the restaurant detail page.</div>;
+const RestaurantPage = () => {
+  const itemsPerPage = 4; // Number of items to display per page
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState(''); // State for search input
+  const [minRating, setMinRating] = useState(0); // State for minimum rating
+
+  // Filter restaurants based on search term and minimum rating
+  const filteredRestaurants = data.restaurants.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+    item.rating >= minRating
+  );
+
+  // Calculate total pages based on filtered results
+  const totalPages = Math.ceil(filteredRestaurants.length / itemsPerPage);
+
+  // Get the current items to display
+  const currentItems = filteredRestaurants.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  // Handle page change
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-8">
+      {/* <h2 className="text-2xl font-bold text-gray-800 mb-6">Restaurants</h2> */}
+
+      {/* Search and Rating Filter */}
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Search restaurants..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="border rounded px-4 py-2 mr-2"
+        />
+        <select
+          value={minRating}
+          onChange={(e) => setMinRating(Number(e.target.value))}
+          className="border rounded px-4 py-2"
+        >
+          <option value={0}>All Ratings</option>
+          <option value={1}>1 Star & Up</option>
+          <option value={2}>2 Stars & Up</option>
+          <option value={3}>3 Stars & Up</option>
+          <option value={4}>4 Stars & Up</option>
+          <option value={5}>5 Stars</option>
+        </select>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {currentItems.map((item, index) => (
+          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="p-6">
+              <h3 className="text-lg font-semibold">{item.name}</h3>
+              <p className="mt-2 text-gray-600">Rating: {item.rating} ⭐</p>
+              <p className="mt-1 text-gray-600">{item.address}</p>
+              <p className="mt-1 text-gray-600">{item.postal_code}</p>
+              <p className="mt-1 text-green-600">{item.cuisine}</p>
+              <a 
+                href={item.menu_link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500"
+              >
+                Visit Menu
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Pagination */}
+      <div className="flex justify-center mt-8">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            className={`mx-1 px-4 py-2 rounded ${currentPage === index + 1 ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'} hover:bg-blue-500`}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-const Restaurent = () => {
-  return (
-    <>
-      <div className="flex justify-between items-center mb-4" id='Restaurent'>
-        <div className="mb-4 mt-24 mx-8">
-          <input type="text" placeholder="Search restaurants..." className="border rounded p-2" value="" />
-        </div>
-        <div className="mb-4 mt-24 mx-8">
-          <label htmlFor="minRating" className="mr-2">Minimum Rating:</label>
-          <input type="number" id="minRating" min="0" max="5" step="1" className="border rounded p-2" value="0" />
-        </div>
-      </div>
-
-      <div className="flex justify-center gap-1 text-xs font-medium mt-4">
-        <ol className="flex justify-center gap-1 text-xs font-medium mt-4">
-          <li>
-            <Link to="/restaurants?page=1" className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 opacity-50 cursor-not-allowed">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <Link to="/restaurants?page=1" className="block h-8 w-8 rounded border bg-blue-600 text-white text-center leading-8 cursor-pointer">1</Link>
-          </li>
-          {/* Add other page links here */}
-          <li>
-            <Link to="/restaurants?page=2" className="block h-8 w-8 rounded border bg-white text-gray-900 text-center leading-8 cursor-pointer">2</Link>
-          </li>
-        </ol>
-      </div>
-
-      {/* Define routes */}
-      <Routes>
-        <Route path="/restaurant/:id" element={<RestaurantDetail />} />
-      </Routes>
-    </>
-  );
-}
-
-export default Restaurent;
+export default RestaurantPage;
