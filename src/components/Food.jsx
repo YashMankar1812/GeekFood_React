@@ -28,7 +28,7 @@ const FoodPage = () => {
     : foodItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black p-8">
 
       {/* Categories Filter */}
       <div className="flex justify-center mt-6">
@@ -47,7 +47,7 @@ const FoodPage = () => {
 
       {/* Food Items */}
       <main className="max-w-6xl mx-auto p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">{selectedCategory} Dishes</h2>
+        <h2 className="text-2xl font-bold text-gray-200 mb-6">{selectedCategory} Dishes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredItems.map(item => (
             <div
